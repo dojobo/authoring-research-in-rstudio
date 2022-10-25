@@ -1,0 +1,3 @@
+[2,"\n"]
+[1,"\u001B[1mpandoc \u001B[22m\n  to: gfm+footnotes+tex_math_dollars-yaml_metadata_block\n  output-file: 20221018-authoring-rstudio.md\n  standalone: true\n  default-image-extension: png\n  html-math-method: webtex\n  filters:\n    - crossref\n    - citeproc\n  \n\u001B[1mmetadata\u001B[22m\n  editor: visual\n  title: Authoring Research in RStudio\n  author: 'Dominic Bordelon, University Library System'\n  date: 'October 18, 2022'\n  bibliography:\n    - references.bib\n  \n"]
+[1,"Output created: 20221018-authoring-rstudio.md\n\n\u001B[32mWatching files for changes\u001B[39m\n\u001B[32mBrowse at \u001B[39m\u001B[4m\u001B[32mhttp://localhost:3371/20221018-authoring-rstudio.md\u001B[39m\u001B[24m\n"]
