@@ -1,0 +1,2 @@
+penguins %>% 
+  mutate(species = str_replace(species, "A", "AAA"))

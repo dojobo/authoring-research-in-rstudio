@@ -1,0 +1,153 @@
+{
+    "sources": [
+        {
+            "DOI": "10.17605/OSF.IO/NUEX5",
+            "URL": "https://osf.io/nuex5/",
+            "author": [
+                {
+                    "family": "Bordelon",
+                    "given": "Dominic"
+                }
+            ],
+            "container-title": "Open Science Framework",
+            "id": "Bordelon2022c",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022,
+                        8,
+                        30
+                    ]
+                ]
+            },
+            "title": "The new college try: Enrolling in first-year science courses as embedded librarianship",
+            "title-short": "The new college try",
+            "type": "article-journal"
+        },
+        {
+            "author": [
+                {
+                    "family": "Grolemund",
+                    "given": "Garrett"
+                },
+                {
+                    "family": "Wickham",
+                    "given": "Hadley"
+                }
+            ],
+            "id": "grolemund2014",
+            "issued": {
+                "date-parts": [
+                    [
+                        2014,
+                        8,
+                        12
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "publisher": "O’Reilly Media",
+            "publisher-place": "Sebastopol, CA",
+            "title": "Hands-on programming with r: Write your own functions and simulations",
+            "title-short": "Hands-on programming with r",
+            "type": "book"
+        },
+        {
+            "URL": "http://www.practicereproducibleresearch.org/",
+            "editor": [
+                {
+                    "family": "Kitzes",
+                    "given": "Justin"
+                },
+                {
+                    "family": "Turek",
+                    "given": "Daniel"
+                },
+                {
+                    "family": "Deniz",
+                    "given": "Fatma"
+                }
+            ],
+            "id": "theprac2018",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018
+                    ]
+                ]
+            },
+            "publisher": "University of California Press",
+            "publisher-place": "Oakland, California",
+            "title": "The practice of reproducible research: Case studies and lessons from the data-intensive sciences",
+            "title-short": "The practice of reproducible research",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Silge",
+                    "given": "Julia"
+                },
+                {
+                    "family": "Robinson",
+                    "given": "David"
+                }
+            ],
+            "edition": "1st edition",
+            "id": "silge2017",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017,
+                        7,
+                        18
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "publisher": "O’Reilly Media",
+            "publisher-place": "Beijing ; Boston",
+            "title": "Text mining with r: A tidy approach",
+            "title-short": "Text mining with r",
+            "type": "book"
+        },
+        {
+            "URL": "https://clauswilke.com/dataviz/",
+            "author": [
+                {
+                    "family": "Wilke",
+                    "given": "Claus O."
+                }
+            ],
+            "id": "wilke",
+            "title": "Fundamentals of data visualization",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Wilke",
+                    "given": "Claus O."
+                }
+            ],
+            "edition": "1st edition",
+            "id": "wilke2019",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019,
+                        4,
+                        30
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "publisher": "O’Reilly Media",
+            "publisher-place": "Sebastopol, CA",
+            "title": "Fundamentals of data visualization: A primer on making informative and compelling figures",
+            "title-short": "Fundamentals of data visualization",
+            "type": "book"
+        }
+    ],
+    "project_biblios": []
+}

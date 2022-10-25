@@ -1,0 +1,118 @@
+---
+title: "Lorem ipsum"
+subtitle: "dolor sit amet"
+author: "Dominic Bordelon"
+affiliation: "University of Pittsburgh"
+format:
+  revealjs:
+    self-contained: true
+    footer: "Lorem ipsum"
+editor: visual
+---
+
+## Introduction
+
+```{r}
+#| echo: false
+#| output: false
+
+library(tidyverse)
+library(palmerpenguins)
+library(knitr)
+library(ggthemes)
+```
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in ex et dui lobortis blandit. Donec sagittis maximus libero, id aliquet tortor fermentum ac.
+
+Duis rutrum eros ut congue tristique. Quisque sit amet tellus feugiat, dignissim leo luctus, ultrices velit. Etiam interdum porta sapien vitae rhoncus. Cras volutpat nisl enim, in posuere enim pellentesque et. In eleifend lacinia ex. Ut ornare dui cursus ex gravida vehicula. Curabitur ullamcorper eget felis id pellentesque.
+
+## Background
+
+Proin vel leo non odio tempus dignissim:
+
+-   In tortor mi, accumsan eget elit sed, posuere accumsan dui.
+
+-   Suspendisse potenti. Suspendisse vestibulum accumsan enim et accumsan.
+
+-   Aenean eu nibh sed arcu sollicitudin pulvinar.
+
+Duis fringilla condimentum enim vel molestie.
+
+## Comparison {.smaller}
+
+::: columns
+::: {.column width="50%"}
+**Approach A**
+
+-   Fusce sagittis
+-   Erat vitae laoreet interdum
+-   Enim urna posuere enim
+-   A ornare ipsum ligula a orci
+:::
+
+::: {.column width="50%"}
+**Approach B**
+
+-   Nullam egestas pellentesque dolor sed condimentum
+-   Proin ut sem pretium
+-   Dapibus odio ut, pharetra dolor
+-   Integer euismod neque sit amet libero dignissim bibendum
+-   Maecenas nec eros risus
+:::
+:::
+
+## Methods
+
+Aenean et risus nec enim imperdiet tincidunt:
+
+1.  Aenean in nulla eleifend, placerat lectus vel, feugiat mauris.
+2.  Nulla dui nibh, pulvinar quis pulvinar eu, ultrices nec est.
+3.  Nunc id velit egestas, vestibulum magna a, iaculis libero.
+4.  Quisque rutrum quis metus et ultrices.
+5.  Pellentesque aliquam libero nisl.
+
+Duis a orci quis turpis gravida varius. Phasellus in velit finibus, mattis velit sit amet, aliquet enim.
+
+## Results
+
+Etiam eget lacus efficitur, euismod urna vitae, egestas tellus. Sed massa ex, porta porta velit nec, suscipit fermentum quam.
+
+```{r}
+#| tbl-cap: "Table 1. Species observed"
+
+penguins %>% 
+  group_by(species) %>% 
+  summarize(Count = n()) %>%
+  rename(Species = species) %>% 
+  kable()
+```
+
+## Analysis
+
+Phasellus congue quis tellus vitae accumsan:
+
+-   Praesent quis interdum quam.
+-   Aliquam nec odio eget lectus pellentesque pellentesque.
+-   Donec at fermentum purus, nec dictum lectus.
+
+------------------------------------------------------------------------
+
+```{r}
+#| echo: false
+#| warning: false
+#| fig-cap: "Fig 1. Bill length correlates with body mass among all three species."
+
+penguins %>% 
+  drop_na(body_mass_g, bill_length_mm) %>%
+  ggplot(aes(x=body_mass_g, y=bill_length_mm, color=species)) +
+  geom_point() + 
+  geom_smooth(method="lm") +
+  theme_clean() +
+  labs(x="Body mass (g)", y="Bill length (mm)")
+```
+
+## Conclusion
+
+Suspendisse potenti. Phasellus elit orci, tempor maximus odio lacinia, viverra iaculis lectus. Donec dapibus velit augue, a faucibus sem facilisis non. Phasellus diam turpis, vestibulum vel posuere ultricies, placerat in massa. Duis a leo auctor, feugiat dolor id, semper dui. Aenean porta at neque eleifend bibendum.
+
+## Bibliography

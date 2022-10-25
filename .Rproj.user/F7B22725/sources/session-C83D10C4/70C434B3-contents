@@ -1,0 +1,130 @@
+---
+title: "Authoring Research in RStudio"
+author: "Dominic Bordelon, University Library System"
+date: "October 18, 2022"
+format:
+  revealjs:
+    self-contained: true
+    scrollable: true
+    smaller: true
+    footer: "Authoring Research in RStudio"
+    logo: "images/ULS_logo1.png"
+editor: visual
+---
+
+## Agenda
+
+1.  Overview of workflow and components
+2.  Writing documents
+3.  Presentation slides
+4.  Websites and books
+5.  Citations and bibliographies
+
+## About the presenter
+
+Dominic Bordelon, Research Data Librarian\
+University of Pittsburgh Library System\
+[dbordelon\@pitt.edu](mailto:dbordelon@pitt.edu)
+
+Support for. . .
+
+-   research data management (data management plans for grant proposals; file and project organization)
+-   Open Science (esp. data sharing)
+-   computer programming for research in R, Python, and SQL (data cleaning, analysis, viz, documentation)
+-   tools like Git and the Linux command line
+-   data ethics, critical data studies
+
+Formats:
+
+-   consultations ([book here](https://pitt.libcal.com/appointments/research_data_librarian))
+-   presentations and workshops for the Pitt community
+-   class visits, lab trainings
+-   R and RStudio Drop-In Hour: Tuesdays, 5-6pm (Fall 2022)
+
+## Overview of workflow and components
+
+The Web is written in **HTML**, for example:
+
+``` {{default}}
+<h2>Section heading</h2>
+<p>Here is some paragraph text.</p>
+<p>A bulleted list:</p>
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+```
+
+In 2004, John Gruber and Aaron Swartz created **Markdown**:
+
+``` {{default}}
+## Section heading
+
+Here is some paragraph text.
+
+A bulleted list:
+
+* Item 1
+* Item 2
+* Item 3
+```
+
+[**Quarto**](https://quarto.org/) (previously RMarkdown) is an extension of Markdown which allows for chunks of R code, LaTeX for math, and lots of configurability. Headers are written in a format called [YAML](https://yaml.org/spec/1.2.2/) (short for "YAML Ain't a Markup Language").
+
+[**Pandoc**](https://pandoc.org/) is a document conversion tool which can accept and output many formats. The [{knitr}](http://yihui.org/knitr/) package uses Pandoc to convert your Quarto document into one or several desired output files.
+
+We don't need to use Pandoc directly---we're simply going to write Quarto docs and click on RStudio's Render button. ![](images/paste-D4CB0351.png)
+
+*Note:* if you want to produce PDFs, you may also need to install a TeX package such as [MiKTeX](https://miktex.org/).
+
+------------------------------------------------------------------------
+
+![How Quarto rendering works](images/paste-5253A7F7.png){fig-align="center"}
+
+## What can you do with Quarto?
+
+::: {layout-ncol="2"}
+### Without code:
+
+-   Prepare outputs of any non-interactive type
+-   Rich hypertext, images, math LaTeX
+-   Tables (manually entered)
+-   Plots (if they were generated somewhere else; insert as image)
+-   Configure via options in file headers
+-   Visual editor suggested
+
+### With code (R, Python):
+
+-   Analysis (expressed as code + output)
+-   Plots
+-   Tables auto-created and/or heavily computed (using [knitr::kable](https://bookdown.org/yihui/rmarkdown-cookbook/kable.html))
+-   Interactive elements in webpages and presentations
+-   Dashboards, web apps
+:::
+
+## Writing documents
+
+-   Simple rich text (bold, italic, code), hyperlinks, headers, and blockquotes are available
+    -   Suggestion: use the visual editor toolbar rather than typing the syntax by hand in the Source editor.
+-   LaTeX can be inserted inline: $H =-\sum p_i \ln p_i$ or in display (block) mode
+-   Images (SVG, PNG, JPG) can be inserted, scaled, and captioned. Add alt-text for accessibility.
+-   When you're ready to convert your Quarto doc to a different format, check the `format` field in the header, then click Render.
+-   Formats: Word (`docx`), `html`, `pdf` (via LaTeX), GitHub-flavored markdown (`gfm`)
+-   Docs reference: [Markdown Basics](https://quarto.org/docs/authoring/markdown-basics.html), [Word Basics](https://quarto.org/docs/output-formats/ms-word.html)
+
+## Presentation slides
+
+-   Formats: Revealjs (browser-based, HTML), PowerPoint (pptx), Beamer (LaTeX PDF)
+-   The Quarto source document looks the same, but each Heading2 becomes a slide title
+-   For Revealjs, important parameters are `scrollable`, `smaller`, and `self-contained`
+-   Docs reference: [Presentations](https://quarto.org/docs/presentations/)
+
+## Websites and books
+
+\[@\]
+
+## Citations and bibliographies
+
+-   If you have a BiBTeX file: you can specify it in the header using the `bibliography` field
+-   Docs reference: [Technical Writing](https://quarto.org/docs/visual-editor/technical.html)
